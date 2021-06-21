@@ -4,6 +4,22 @@ body {
    color:black;
    font-family: Roboto;
 }
+.header {
+   display: flex;
+   width: 1600px;
+   left: 0;
+   top: 0;
+}
+.main-nav {
+   display: flex;
+}
+.container {
+   width: 100%;
+   max-width: 1200px;
+}
+
+
+
 .logo-blue {
 font-family: Raleway;
 color: #2196F3;
@@ -12,6 +28,7 @@ font-size: 26px;
 letter-spacing: 0.03em;
 line-height: 1.2;
 list-style: none;
+
 }
 
 .logo {
@@ -21,6 +38,7 @@ font-weight: 900;
 font-size: 26px;
 letter-spacing: 0.03em;
 line-height: 1.2;
+margin: 11px 1255px 38px 200px;
 }
 
 /*стили для сылок*/
@@ -28,6 +46,12 @@ line-height: 1.2;
 * li, a  {
    list-style: none;
    text-decoration: none;
+}
+.list {
+   display: flex;
+}
+.list .item:not(:last-child) {
+   margin-right: 40px;
 }
 .link {
    font-family: Roboto;
@@ -37,6 +61,7 @@ line-height: 1.2;
    line-height: 16px;
    letter-spacing: 0,02em;
    color: #212121;
+   padding-left: 80px;
 }
 .link-active {
    font-family: Roboto;
@@ -63,6 +88,9 @@ line-height: 1.2;
 }
 .link-grey:hover {
    color: #2196F3;
+}
+.contacts {
+   display: flex;
 }
 
 /*main section webstudio*/
