@@ -5,8 +5,10 @@ body {
    font-family: Roboto;
 }
 .header {
+   
    display: flex;
    width: 1600px;
+   height: 80px;
    left: 0;
    top: 0;
 }
@@ -14,8 +16,8 @@ body {
    display: flex;
 }
 .container {
-   width: 100%;
-   max-width: 1200px;
+   
+   width: 1600px;
 }
 
 
@@ -29,6 +31,7 @@ letter-spacing: 0.03em;
 line-height: 1.2;
 list-style: none;
 
+
 }
 
 .logo {
@@ -38,7 +41,8 @@ font-weight: 900;
 font-size: 26px;
 letter-spacing: 0.03em;
 line-height: 1.2;
-margin: 11px 1255px 38px 200px;
+
+
 }
 
 /*стили для сылок*/
@@ -85,12 +89,17 @@ margin: 11px 1255px 38px 200px;
    font-weight: 500;
    font-size: 14px;
    list-style: none;
+   margin-right: 12px;
 }
+
+
 .link-grey:hover {
    color: #2196F3;
+   
 }
 .contacts {
    display: flex;
+   padding-right: 12px;
 }
 
 /*main section webstudio*/
