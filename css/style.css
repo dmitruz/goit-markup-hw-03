@@ -146,10 +146,11 @@ margin-left: 218px;
 //*middle section*//
 
 .middle-section {
-   width: 1170px;
+   width: 1200px;
    padding: 94px 94px;
-   margin-left: 215px;;
-   margin-right: 215px;
+    margin-left: 200px;;
+   margin-right: 200px;
+   
    
 }
 .hide-text {
@@ -157,7 +158,8 @@ margin-left: 218px;
 }
 .middle-list {
    display: flex;
-   margin-right: 30px;
+   margin-left: 200px;
+   margin-right: 200px;
    padding-top: 94px;
    padding-bottom: 94px;
 }
@@ -183,15 +185,18 @@ margin-left: 218px;
 //*What we do section*//
 
 .what-we-do {
-   width: 1170px;
-   margin: 0 215px 0 215px;
+   width: 1200px;
+   padding-top: 94px;
+   padding-bottom: 94px;
+   margin-left: 200px;
+   margin-right: 200px;
 }
 .what-we-do-list {
    display: flex;
-   width: 1170px;
-   margin: 0 215px 94px 215px;
-   padding-top: 94px;
-   padding-bottom: 94px;
+   width: 1200px;
+   margin-left: 200px;
+   margin-right: 200px;
+   
    
 }
 .item {
@@ -213,11 +218,17 @@ margin-left: 218px;
    background: #f5f4f5;
    width: 1600px;
    margin: 0;
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+.h2-description {
+   padding-bottom: 50px;
 }
 .last-list {
    display: flex;
-   width: 1170px;
-   margin: 0 215px 94px 215 px;
+   width: 1200px;
+   margin-left: 200px;
+   margin-right: 200px;
    padding-bottom: 94px;
    padding-top: 94px; 
 }
@@ -241,13 +252,24 @@ margin-left: 218px;
 /*footer*/
 
 .footer {
-   width: 1600px;
-
+ background: #2F303a;
+ padding-left: 0;
+ width: 1600px;
+ height: 252px;
 }
-.studio {
+   
+   .footer-list {
+      width: 230px;
+      padding-left: 216px;
+ }
+
+.logo-footer {
+   padding-top: 60px;
+}
+ .studio {
+    padding-top: 60px;
    color: #fff;
 }
-
 .address {
    font-family: Roboto;
    font-style: normal;
@@ -278,16 +300,7 @@ margin-left: 218px;
 .address:hover, .mail:hover, .tele:hover {
    color:#2196F3;
 }
-.footer {
-   background: #2F303a;
-   padding-left: 0;
-   width: 1600px;
-   height: 252px;
-}
-.footer-list {
-   width: 230px;
-   padding-left: 216px;
-}
+
  
 
 /*Portfolio styles*/
@@ -300,9 +313,9 @@ margin-left: 218px;
 //*Main section*//
 
 .main-section {
-   width: 1170px;
-   padding-left: 215px;
-   padding-right: 215px;
+   width: 1200px;
+   padding-left: 200px;
+   padding-right: 200px;
    padding-top: 94px;
    margin-left: auto;
    margin-right: auto;
@@ -333,11 +346,13 @@ margin-left: 218px;
    letter-spacing: 0.03em;
    border-radius: 4px;
    border-collapse: collapse;
+   cursor: pointer;
 }
 
 .btn-port:hover {
    background: #2196F3;
    color:#fff;
+   cursor: pointer;
 }
    
 .btn-port-active {
@@ -353,15 +368,15 @@ margin-left: 218px;
    letter-spacing: 0.03em;
    border-radius: 4px;
    border-collapse: collapse;
+   cursor: pointer;
 }
 
 //*flex-container*//
 
 .flex-container {
-   width: 1170 px;
-   padding-left: 215px;
-   padding-right: 215px;
+   width: 1200 px;
    padding-top: 94px;
+   padding-bottom: 94px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -369,14 +384,26 @@ margin-left: 218px;
    display: flex;
    flex-wrap: wrap;
    padding-top: 94px;
+   padding-bottom: 94px;
+   margin-left: 200px;
+   
 }
    
 
 .flex-item {
    margin-right: 30px;
+   margin-bottom: 30px;
+
 }
 .flex-item:nth-child(3n) {
    margin-right: 0;
+}
+.flex-item:nth-child(-n + 3) {
+   margin-bottom: 0;
+}
+.img-text {
+   border: 1px solid #EEE;
+   padding-top: 0;
 }
 .poster-name {
    font-family: Roboto;
