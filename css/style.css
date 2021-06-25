@@ -1,18 +1,36 @@
-
+* {
+   box-sizing: border-box;
+}
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+:root {
+   --blue-color: #2196f3;
+   --text-descr: #757575;
+   --text-headers: #212121;
+   --primary-white-color: #ffffff;
+   --background-main-color: #2f303a;
+   --background-gray-color: #f5f4fa;
+}
 body {
    background: #e5e5e5; 
    color:black;
    font-family: Roboto;
 }
-.header, .header-portfolio {
+
+   
+.header-port {
    width: 1600px;
-    height: 80px;
    left: 0;
    top: 0;
+
+
 }
 .main-nav {
    display: flex;
    align-items: center;
+   padding-top: 32px;
+   
 }
 .container {
    
@@ -29,8 +47,6 @@ font-size: 26px;
 letter-spacing: 0.03em;
 line-height: 1.2;
 list-style: none;
-
-
 }
 
 .logo, .logo-footer {
@@ -54,11 +70,9 @@ margin-left: 218px;
 }
 .list {
    display: flex;
-   
-}
-.list .item:not(:last-child) {
-   margin-right: 40px;
-}
+   }
+
+
 .link {
    font-family: Roboto;
    font-style: normal;
@@ -102,7 +116,6 @@ margin-left: 218px;
 .contacts {
    display: flex;
    margin-left: auto;
-  
 }
 .contacts .item + .item {
    margin-left: 50px;
@@ -112,37 +125,45 @@ margin-left: 218px;
 
 .hero {
    background: #2F303A;
-   
    width: 1600px;
-   left: 0px;
-   top: 80px;
 }
-.hero-text {
+.hero-box {
+   with: 1600px;
+}
+ .hero .hero-text {
    font-weight: 900;
    color: #fff;
    letter-spacing: 0.06em;
    text-transform: uppercase;
    line-height: 1.4;
    text-align: center;
-   font-weight: 900;
    font-size: 44px;
+   margin-top: 0;
+   margin-bottom: 30px;
+   padding-left: 256px;
+   padding-right: 256px;
+   padding-top: 221px;
 }
-.button {
-   background: #2196F3;
-   color: #fff;
-   padding: 0;
-   margin-left: 700px;
+ .hero .button {
+   font-family: Roboto;
+   font-weight: 700;
    text-align: center;
-   letter-spacing: 0.06em;
-   line-height: 1.9;
-   font-weight: 900;
+   padding: 10px 32px;
    font-size: 16px;
+    line-height: 1.88;
+    background-color: #2196F3;
+    color: #fff;
+   box-shadow: 0px 4px 4px rgba(0 0 0 / 15%);
    border-radius: 4px;
-   
+   letter-spacing: 0.06em;
+   cursor: pointer;
 }
-.button:hover {
-   color:#2196F3;
+
+
+button, button:active, button:focus {
+   outline: none;
 }
+
 //*middle section*//
 
 .middle-section {
