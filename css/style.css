@@ -40,8 +40,9 @@ body {
    
 .header {
    box-sizing: border-box;
-   width: 1600px;
    border-bottom: 1px solid #ECECEC;
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 .header-port {
    display: flex;
@@ -64,11 +65,7 @@ body {
    padding-right: 20px;
 }
 
-   
 
-.container {
-    width: 1600px;
-}
 
 
 
@@ -211,9 +208,9 @@ button, button:active, button:focus {
    padding-top: 94px;
    padding-bottom: 94px;
 }
-.middle-section {
+.midd-section {
    display: flex;
-   justifu-content: center;
+   justify-content: center;
 }
 .container {
    max-width: 1200px;
@@ -252,54 +249,58 @@ button, button:active, button:focus {
 }
 //*What we do section*//
 
-.what-we-do {
-   width: 1200px;
+.section {
    padding-top: 94px;
    padding-bottom: 94px;
-   margin-left: 200px;
-   margin-right: 200px;
+}
+.section-description {
+   font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: color: var(--title-color);
+    margin-bottom: 50px;
+}
+.what-we-do-description {
+   display: flex;
+   justify-content: center;
+}
+.container {
+   max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .what-we-do-list {
    display: flex;
-   width: 1200px;
-   margin-left: 200px;
-   margin-right: 200px;
-   
-   
+   align-items: center;
 }
 
-
-.h2-description {
-   color: #212121;
-   text-align: center;
-   line-height: 1.2;
-   letter-spacing: 0.03em;
-   font-weight: 900;
-   font-size: 36px;
-   padding-top: 94px;
-}
 /*our team*/
 
-.our-team {
-   background: #f5f4f5;
-   width: 1600px;
-   margin: 0;
+.our-team-section {
+   background: var(--our-team-background);
    padding-top: 94px;
    padding-bottom: 94px;
 }
-.h2-description {
-   padding-bottom: 50px;
+.our-team-container {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   display: flex;
+   justify-content: center;
 }
+
 .last-list {
    display: flex;
-   width: 1200px;
-   margin-left: 200px;
-   margin-right: 200px;
-   padding-bottom: 94px;
-   padding-top: 94px; 
+   
 }
 .worker-name {
-   color: #212121;
+  color: #212121;
    text-align: center;
    line-height: 1.2;
    letter-spacing: 0.03em;
@@ -307,22 +308,24 @@ button, button:active, button:focus {
    font-size: 16px;
 }
 .grey-prof {
-   color:#757575;
-   font-weight: 400;
-   text-align: center;
-   line-height: 1.2;
-   letter-spacing: 0.03em;
    font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: #757575;
 }
 
 /*footer*/
 
 .footer {
  background: #2F303a;
- padding-left: 0;
- width: 1600px;
- height: 252px;
 }
+.footer-div {
+   padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
+}
+
    
    .footer-list {
       width: 230px;
@@ -371,48 +374,40 @@ button, button:active, button:focus {
 
 /*Portfolio styles*/
 
-.header-portfolio {
-   width: 1600px;
-   border-bottom: 1px solid #ECECEC;
-}
+
 
 //*Main section*//
 
 .main-section {
-   width: 1200px;
-   padding-left: 200px;
-   padding-right: 200px;
    padding-top: 94px;
-   margin-left: auto;
-   margin-right: auto;
+   padding-bottom: 94px;
 }
 .btn-list {
    display: flex;
-   width: 611px;
-   padding-top: 94px;
-   padding-left: 494px;
+    justify-content: center;
+    margin-bottom: 34px;
   
 }
    
-.padding-item {
+.padding-item:not(:last-child) {
    margin-right: 8px;
-   
-   
 }
    
 .btn-port {
-   font-family: Roboto;
-   font-style: normal;
-   background: #F5F4FA;
-   color: #212121;
+   font-family: inherit;
+   background: var(--background-portfolio-button);
+   cursor: pointer;
    font-weight: 500;
    font-size: 16px;
-   line-height: 1.6;
-   text-align: center;
+   line-height: 1.62;
    letter-spacing: 0.03em;
-   border-radius: 4px;
-   border-collapse: collapse;
-   cursor: pointer;
+   border: 0;
+   margin-right: 8px;
+   color: var(--title-color);
+}
+.btn-port-active {
+   background: var(--background-button);
+    color: var(--color-button);
 }
 
 .btn-port:hover {
@@ -437,36 +432,28 @@ button, button:active, button:focus {
    cursor: pointer;
 }
 
-//*flex-container*//
+//*flex-list cardset container*//
 
-.flex-container {
-   width: 1200 px;
-   padding-top: 94px;
-   padding-bottom: 94px;
-   margin-left: auto;
-   margin-right: auto;
-}
 .flex-list {
-   display: flex;
-   flex-wrap: wrap;
-   padding-top: 94px;
-   padding-bottom: 94px;
-   margin-left: 200px;
-   
+   padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
 }
-   
+.flex-list > .flex-item {
+   flex basis: calc(100% / 3 30px);
+   margin-left: 30px;
+    margin-top: 30px;
+}
+.img-text {
+   padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+}
 
-.flex-item {
-   margin-right: 30px;
-   margin-bottom: 30px;
 
-}
-.flex-item:nth-child(3n) {
-   margin-right: 0;
-}
-.flex-item:nth-child(-n + 3) {
-   margin-bottom: 0;
-}
 .img-text {
    border: 1px solid #EEE;
    padding-top: 0;
