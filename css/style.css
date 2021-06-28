@@ -46,7 +46,6 @@ body {
 }
    
 .header {
-   box-sizing: border-box;
    border-bottom: 1px solid #ECECEC;
    padding-top: 24px;
    padding-bottom: 24px;
@@ -77,13 +76,6 @@ body {
 .header-item:not(:last-child) {
    margin-right: 50px;
 }
-.link {
-   font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-   color: var(--title-color);
-}
-
 
 .logo-blue {
 font-family: Raleway;
@@ -105,11 +97,12 @@ line-height: 1.2em;
 text-decoration: none;
 }
 .logo-container {
-margin-right: 92px;
+margin 0;
 }
 .logo-footer {
-   padding-top: 60px;
-}
+   margin-bottom: 20px;
+   display: block;
+text-decoration: none;
 }
 /*стили для сылок*/
 
@@ -119,7 +112,7 @@ margin-right: 92px;
 }
 .list {
    display: flex;
-   }
+ }
 
 
 .link {
@@ -131,6 +124,7 @@ margin-right: 92px;
    letter-spacing: 0,02em;
    color: #212121;
    padding-left: 80px;
+   text-decoration: none;
 }
 .link-active {
    font-family: Roboto;
@@ -154,6 +148,7 @@ margin-right: 92px;
    font-weight: 500;
    font-size: 14px;
    list-style: none;
+   text-decoration: none;
    
 }
 .link-grey:hover {
@@ -163,28 +158,23 @@ margin-right: 92px;
 .contacts {
    display: flex;
    margin-left: auto;
-   margin-bottom: 32px;
    list-style: none;
 }
-
+.item {
+   margin-right: 50px;
+}
 
 
 /*main section webstudio*/
 
 .hero {
    background: var(--primary-background);
-   text-align: center;
-   padding-top: 94px;
-   padding-bottom: 94px;
-   display: block;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-.hero-box {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-}
+ 
+
  .hero-text {
    font-weight: 900;
    font-size: 44px;
@@ -211,23 +201,19 @@ margin-right: 92px;
 .button-section {
    margin-bottom: 200px;
 }
- 
-
-
-button, button:active, button:focus {
+ button, button:active, button:focus {
    outline: none;
 }
 
 //*middle section*//
 
-.section {
+.section-advantages {
+   text-align: center;
    padding-top: 94px;
    padding-bottom: 94px;
+   
 }
-.midd-section {
-   display: flex;
-   justify-content: center;
-}
+
 .container {
    max-width: 1200px;
    margin-left: auto;
@@ -240,6 +226,7 @@ button, button:active, button:focus {
 }
 .middle-list {
    display: flex;
+   list-style: none;
 }
 .midle-list.item:not(:last-child) {
    margin-right: 30px;
@@ -265,7 +252,7 @@ button, button:active, button:focus {
 }
 //*What we do section*//
 
-.section {
+.middle-section {
    padding-top: 94px;
    padding-bottom: 94px;
 }
@@ -292,6 +279,7 @@ button, button:active, button:focus {
 .what-we-do-list {
    display: flex;
    align-items: center;
+   list-style: none;
 }
 
 /*our team*/
@@ -321,6 +309,7 @@ button, button:active, button:focus {
 }
 .last-list {
    display: flex; 
+   list-style: none;
 }
 .worker-name {
   color: #212121;
@@ -342,22 +331,14 @@ button, button:active, button:focus {
 
 .footer {
  background: #2F303a;
-}
-.footer-div {
-   padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 215px;
-}
-
-   
-   .footer-list {
+ padding-top: 60px;
+ padding-bottom: 60px;
+}  
+.footer-list {
       width: 230px;
-      padding-left: 216px;
+      padding-left: 0;
  }
 
-.logo-footer {
-   padding-top: 60px;
-}
  .studio {
     padding-top: 60px;
    color: #fff;
@@ -450,14 +431,18 @@ button, button:active, button:focus {
 
 //*flex-list cardset container*//
 
+.poster-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
 .flex-list {
    padding: 0;
    margin: 0;
    display: flex;
    flex-wrap: wrap;
    margin-left: -30px;
-   margin-top: -30px;
-    
+   margin-top: -30px;    
 }
 .flex-list > .flex-item {
    flex basis: calc((100%-90px) / 3);
@@ -472,18 +457,26 @@ button, button:active, button:focus {
 
 
 .img-text {
+   padding: 20px 24px;
    border: 1px solid #EEE;
-   padding-top: 0;
+   border-top: 0;
 }
 .poster-name {
-   font-family: Roboto;
    font-weight: bold;
-   font-size: 18px;
-   line-height: 2;
-   letter-spacing: 0.06em;
-   color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--title-color);
 }
+
 .poster-desc {
+   font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+//*
    font-family: Roboto;
    font-weight: normal;
    font-size: 16px;
@@ -491,3 +484,4 @@ button, button:active, button:focus {
    letter-spacing: 0.03em;
    color: #757575;
 }
+*//
