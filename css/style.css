@@ -1,8 +1,13 @@
+body {
+   font-family: Roboto, sans-serif;
+   margin: 0;
+}
+
 * {
    box-sizing: border-box;
 }
 *, *::before, *::after {
-   box-sizing: inherit;
+   box-sizing: border-box;
 }
 
   :root {
@@ -28,22 +33,20 @@ h4,
 h5,
 h6,
 p {
-   margin-top: 0;
-   margin-bottom: o;
+   margin: o;
 }
+
 .ul,
-.ol {
-   margin-top: o;
-   margin-bottom: 0;
-   padding-left: 0;
+.ol,
+.li {
+   margin: 0;
+   padding: 0;
 }
 .img {
    display: block;
 }
-body {
-   font-family: Roboto, sans-serif;
-   margin: 0;
-}
+
+
    
 .header {
    border-bottom: 1px solid #ECECEC;
@@ -63,19 +66,18 @@ body {
 .main-nav {
    display: flex;
    align-items: center;
-   margin-top: 32px;
-   margin-bottom: 32px;
 }
 .list-container {
    display: flex;
    align-items: center;
-   padding-right: 20px;
    list-style: none;
+   padding-left: 0;
 }
 
-.header-item:not(:last-child) {
+/*.header-item:not(:last-child) {
    margin-right: 50px;
-}
+}*  Потому что слишком большие отступы, не смотря на то что 
+в CSS для всех ul, ol , li padding  and margin 0*/
 
 .logo-blue {
 font-family: Raleway;
@@ -170,8 +172,8 @@ text-decoration: none;
 .hero {
    background: var(--primary-background);
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
  
 
@@ -184,9 +186,7 @@ text-decoration: none;
    text-transform: uppercase;
    color: var(--main-title-color);
 }
-.hero-text-section {
-   margin-top: 200px;
-}
+
  .button {
    background: var(--background-button);
    cursor: pointer;
@@ -205,10 +205,8 @@ text-decoration: none;
    outline: none;
 }
 
-//*middle section*//
 
 .section-advantages {
-   text-align: center;
    padding-top: 94px;
    padding-bottom: 94px;
    
@@ -220,6 +218,10 @@ text-decoration: none;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
+}
+.middle-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
 }
 .hide-text {
    display: none;
@@ -238,7 +240,7 @@ text-decoration: none;
    color: #212121;
    line-height: 1.1;
    letter-spacing: 0.03em;
-   font-weight: 900;
+   font-weight: 700;
    font-size: 14px;
    text-transform: uppercase;
 }
@@ -263,7 +265,6 @@ text-decoration: none;
     text-align: center;
     letter-spacing: 0.03em;
     color: color: var(--title-color);
-    margin-bottom: 50px;
 }
 .what-we-do-description {
    display: flex;
@@ -295,12 +296,14 @@ text-decoration: none;
    box-sizing: border-box;
 }
 .our-team-item {
+   flex-basis: calc((100% - 120px) / 4);
     border-left: 1px solid #ececec;
    border-right: 1px solid #ececec;
    border-bottom: 1px solid #ececec;
 }
 .our-team-item:not(:last-child) {
    margin-right: 30px;
+   
 }
 .team-content-list {
    background: #ffffff;
@@ -310,6 +313,7 @@ text-decoration: none;
 .last-list {
    display: flex; 
    list-style: none;
+   margin-left: -30px;
 }
 .worker-name {
   color: #212121;
