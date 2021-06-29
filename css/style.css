@@ -296,15 +296,15 @@ text-decoration: none;
    box-sizing: border-box;
 }
 .our-team-item {
-   flex-basis: calc((100% - 120px) / 4);
     border-left: 1px solid #ececec;
    border-right: 1px solid #ececec;
    border-bottom: 1px solid #ececec;
 }
+
 .our-team-item:not(:last-child) {
    margin-right: 30px;
-   
-}
+} 
+
 .team-content-list {
    background: #ffffff;
     border-radius: 0px 0px 4px 4px;
@@ -322,6 +322,9 @@ text-decoration: none;
    letter-spacing: 0.03em;
    font-weight: 500;
    font-size: 16px;
+   margin-top: 0;
+   margin-bottom: 10px;
+ 
 }
 .grey-prof {
    font-size: 16px;
@@ -329,6 +332,9 @@ text-decoration: none;
    text-align: center;
    letter-spacing: 0.03em;
    color: #757575;
+   margin-top: 0;
+   margin-bottom: 10px;
+   
 }
 
 /*footer*/
