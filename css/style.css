@@ -1,8 +1,13 @@
+body {
+   font-family: Roboto, sans-serif;
+   margin: 0;
+}
+
 * {
    box-sizing: border-box;
 }
 *, *::before, *::after {
-   box-sizing: inherit;
+   box-sizing: border-box;
 }
 
   :root {
@@ -28,16 +33,22 @@ h4,
 h5,
 h6,
 p {
-   margin-top: 0;
-   margin-bottom: o;
+   margin: o;
 }
-body {
-   font-family: Roboto, sans-serif;
+
+.ul,
+.ol,
+.li {
    margin: 0;
+   padding: 0;
 }
+.img {
+   display: block;
+}
+
+
    
 .header {
-   box-sizing: border-box;
    border-bottom: 1px solid #ECECEC;
    padding-top: 24px;
    padding-bottom: 24px;
@@ -47,25 +58,28 @@ body {
    align-items: center;
 }
 .container {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
+   width: 1200px;
+   margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
+   box-sizing: border-box;
 }
 .main-nav {
    display: flex;
-   margin-top: 32px;
-   margin-bottom: 32px;
+   align-items: center;
 }
 .list-container {
    display: flex;
-   padding-right: 20px;
+   align-items: center;
+   list-style: none;
+   padding-left: 0;
+   margin: 0;
 }
 
-
-
-
+/*.header-item:not(:last-child) {
+   margin-right: 50px;
+}*  Потому что слишком большие отступы, не смотря на то что 
+в CSS для всех ul, ol , li padding  and margin 0*/
 
 .logo-blue {
 font-family: Raleway;
@@ -84,13 +98,17 @@ color: black;
 font-weight: 900;
 font-size: 26px;
 letter-spacing: 0.03em;
-line-height: 1.2;
-margin-left: 218px;
+line-height: 1.2em;
+text-decoration: none;
+}
+.logo-container {
+margin 0;
 }
 .logo-footer {
-   padding-top: 60px;
+   margin-bottom: 20px;
+   display: block;
+text-decoration: none;
 }
-
 /*стили для сылок*/
 
 * li, a  {
@@ -99,7 +117,7 @@ margin-left: 218px;
 }
 .list {
    display: flex;
-   }
+ }
 
 
 .link {
@@ -111,6 +129,7 @@ margin-left: 218px;
    letter-spacing: 0,02em;
    color: #212121;
    padding-left: 80px;
+   text-decoration: none;
 }
 .link-active {
    font-family: Roboto;
@@ -134,39 +153,30 @@ margin-left: 218px;
    font-weight: 500;
    font-size: 14px;
    list-style: none;
+   text-decoration: none;
    
 }
-
-
 .link-grey:hover {
    color: #2196F3;
-   
-}
+   }
 
 .contacts {
    display: flex;
    margin-left: auto;
-   margin-top: 32px;
-   margin-bottom: 32px;
+   list-style: none;
 }
-
+header.item {
+   margin-right: 50px;
+}
 
 
 /*main section webstudio*/
 
 .hero {
    background: var(--primary-background);
-   text-align: center;
-   padding-top: 94px;
-   padding-bottom: 94px;
-   display: block;
-}
-.hero-box {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
  .hero-text {
    font-weight: 900;
@@ -177,9 +187,7 @@ margin-left: 218px;
    text-transform: uppercase;
    color: var(--main-title-color);
 }
-.hero-text-section {
-   margin-top: 200px;
-}
+
  .button {
    background: var(--background-button);
    cursor: pointer;
@@ -188,29 +196,22 @@ margin-left: 218px;
    font-size: 16px;
    line-height: 1.87;
    text-align: center;
+   padding: 10px 32px;
+   border-radius: 4px;
+   border: 0;
    letter-spacing: 0.06em;
    color: var(--color-button);
  }
-.button-section {
-   margin-bottom: 200px;
-}
- 
 
-
-button, button:active, button:focus {
+ button, button:active, button:focus {
    outline: none;
 }
 
-//*middle section*//
 
-.section {
-   padding-top: 94px;
-   padding-bottom: 94px;
+.section-advantages {
+   padding-top: 94px; 
 }
-.midd-section {
-   display: flex;
-   justify-content: center;
-}
+
 .container {
    max-width: 1200px;
    margin-left: auto;
@@ -218,11 +219,17 @@ button, button:active, button:focus {
    padding-left: 15px;
    padding-right: 15px;
 }
+.middle-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 .hide-text {
    display: none;
 }
 .middle-list {
    display: flex;
+   list-style: none;
+   padding: 0;
 }
 .midle-list.item:not(:last-child) {
    margin-right: 30px;
@@ -234,7 +241,7 @@ button, button:active, button:focus {
    color: #212121;
    line-height: 1.1;
    letter-spacing: 0.03em;
-   font-weight: 900;
+   font-weight: 700;
    font-size: 14px;
    text-transform: uppercase;
 }
@@ -248,8 +255,7 @@ button, button:active, button:focus {
 }
 //*What we do section*//
 
-.section {
-   padding-top: 94px;
+.middle-section {
    padding-bottom: 94px;
 }
 .section-description {
@@ -271,10 +277,14 @@ button, button:active, button:focus {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 .what-we-do-list {
    display: flex;
    align-items: center;
+   list-style: none;
+   margin-right: -30px;
+   padding: 0;
 }
 
 /*our team*/
@@ -294,9 +304,11 @@ button, button:active, button:focus {
    border-right: 1px solid #ececec;
    border-bottom: 1px solid #ececec;
 }
+
 .our-team-item:not(:last-child) {
    margin-right: 30px;
-}
+} 
+
 .team-content-list {
    background: #ffffff;
     border-radius: 0px 0px 4px 4px;
@@ -304,6 +316,8 @@ button, button:active, button:focus {
 }
 .last-list {
    display: flex; 
+   list-style: none;
+   margin-left: -30px;
 }
 .worker-name {
   color: #212121;
@@ -312,6 +326,9 @@ button, button:active, button:focus {
    letter-spacing: 0.03em;
    font-weight: 500;
    font-size: 16px;
+   margin-top: 0;
+   margin-bottom: 10px;
+ 
 }
 .grey-prof {
    font-size: 16px;
@@ -319,28 +336,27 @@ button, button:active, button:focus {
    text-align: center;
    letter-spacing: 0.03em;
    color: #757575;
+   margin-top: 0;
+   margin-bottom: 10px;
+   
 }
 
 /*footer*/
 
 .footer {
  background: #2F303a;
-}
-.footer-div {
-   padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 215px;
-}
-
-   
-   .footer-list {
+ padding-top: 60px;
+ padding-bottom: 60px;
+}  
+.footer-list {
       width: 230px;
-      padding-left: 216px;
+      padding: 0;
+      margin-top: 9px;
+ }
+ .footer-item-list:not(:last-child) {
+   margin-bottom: 9px;
  }
 
-.logo-footer {
-   padding-top: 60px;
-}
  .studio {
     padding-top: 60px;
    color: #fff;
@@ -353,7 +369,10 @@ button, button:active, button:focus {
    line-height: 1.7;
    letter-spacing: 0.03em;
    font-size: 14px;
+   
 }
+
+
 .mail {
    font-family: Roboto;
    font-style: normal;
@@ -390,7 +409,6 @@ button, button:active, button:focus {
    display: flex;
     justify-content: center;
     margin-bottom: 34px;
-  
 }
    
 .padding-item:not(:last-child) {
@@ -398,13 +416,16 @@ button, button:active, button:focus {
 }
    
 .btn-port {
-   font-family: inherit;
+   font-family: Roboto;
+   font-style: normal;
    background: var(--background-portfolio-button);
    cursor: pointer;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
    letter-spacing: 0.03em;
+   border-radius: 4x;
+   padding: 6px 22px;
    border: 0;
    margin-right: 8px;
    color: var(--title-color);
@@ -427,11 +448,17 @@ button, button:active, button:focus {
    line-height: 1.6;
    letter-spacing: 0.03em;
    border-radius: 4px;
+   padding: 6px 22px;
    border-collapse: collapse;
    cursor: pointer;
 }
 
 //*flex-list cardset container*//
+
+.poster-section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 
 .flex-list {
    padding: 0;
@@ -439,8 +466,7 @@ button, button:active, button:focus {
    display: flex;
    flex-wrap: wrap;
    margin-left: -30px;
-   margin-top: -30px;
-    
+   margin-top: -30px;    
 }
 .flex-list > .flex-item {
    flex basis: calc((100%-90px) / 3);
@@ -455,18 +481,32 @@ button, button:active, button:focus {
 
 
 .img-text {
+   padding: 20px 24px;
    border: 1px solid #EEE;
-   padding-top: 0;
+   border-top: 0;
 }
 .poster-name {
-   font-family: Roboto;
    font-weight: bold;
-   font-size: 18px;
-   line-height: 2;
-   letter-spacing: 0.06em;
-   color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--title-color);
+    margin-top: 0;
+    padding-left: 0;
 }
+
 .poster-desc {
+   font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left:0;
+
+}
+//*
    font-family: Roboto;
    font-weight: normal;
    font-size: 16px;
@@ -474,3 +514,4 @@ button, button:active, button:focus {
    letter-spacing: 0.03em;
    color: #757575;
 }
+*//
