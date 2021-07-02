@@ -217,7 +217,6 @@ text-decoration: none;
 
 .section-advantages {
    padding-top: 94px; 
-   padding-bottom: 94px;
 }
 
 .container {
@@ -388,7 +387,7 @@ text-decoration: none;
    font-size: 14px;
    line-height: 1.7;
    letter-spacing: 0.03em;
-   color:  var(--text-color);
+   color: rgba(255, 255, 255, 0.6);
 }
 
 .address:hover, .mail:hover, .tele:hover {
@@ -408,8 +407,7 @@ text-decoration: none;
 .btn-list {
    display: flex;
     justify-content: center;
-    padding: 94px 0px;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
 }
    
 .padding-item:not(:last-child) {
